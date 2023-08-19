@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quicksand:wght@500;700&display=swap');
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    list-style: none;
+    padding: none;
+    margin: none;
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+h1{
+    font-family: 'Permanent Marker', cursive;
+}
+
+a:hover,
+svg:hover {
+    color: #08076d;
+    fill: #08076d;
+    cursor: pointer;
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 0;
+    margin: none;
+    width: 100%;
+    border: 1px solid #eee;
+}
+
+#nav_contato {
+    display: flex;
+    gap: 2em;
+}
+
+#nav_icones {
+    display: flex;
+    gap: 1em;
+}
+
+.contato {
+    text-align: center;
+    padding: 0em 3em 3em;
+}
+
+header {
+    display: flex;
+    padding: 1em 0;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header-items {
+    display: flex;
+    gap: 2em;
+}
+
+#abre-produtos-menu:hover #produtos-menu {
+    opacity: 1;
+}
+
+#produtos-menu {
+    padding: 0;
+    background-color: black;
+    color: white;
+    position: absolute;
+    opacity: 0;
+    text-align: start;
+    border-radius: 4px;
+    transition: all 2s cubic-bezier(0.215, 0.610, 0.355, 1);
+    padding: .4em;
+}
+
+#produtos-menu li {
+    width: 100%;
+    padding: .4em;
+}
+
+#produtos-menu li:hover {
+    background-color: #212529;
+}
+
+#banner {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+#banner img {
+    width: 50%;
+    object-fit: cover;
+    box-shadow: 10px 15px 5px 2px black;
+}
+
+#apresentation {
+    text-align: center;
+}
+
+#apresentation h6 {
+    margin: 0 auto;
+}
+
+#produtos {
+    display: flex;
+    flex-direction: column;
+}
+
+.linha {
+    display: flex;
+    justify-content: space-around;
+}
+
+#catalogo {
+    text-align: center;
+    font-size: larger;
+}
+
+#produtos img {
+    width: 90%;
+}
+
+.produto:hover {
+    filter: drop-shadow(30px 10px 4px #4444dd);
+    cursor: pointer;
+}
+
+footer {
+    background-color: #212529;
+    color: white    ;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
